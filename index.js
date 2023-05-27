@@ -28,6 +28,9 @@ const connect = () => {
 };
 
 // Routes
+app.use("/", (req, res) =>{
+  res.json("Server is working")
+})
 app.use("/api/", Routes);
 
 // 3: step heroku
